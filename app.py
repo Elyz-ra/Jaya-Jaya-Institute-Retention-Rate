@@ -61,9 +61,14 @@ def train_xgb(X, y):
     return model, y_test, y_pred, y_prob
 
 def load_model():
-    model_bundle = joblib.load('xgboost_model_bundle.pkl')
-    model = model_bundle['model']
-    le = model_bundle['label_encoder']
+    # Load model dari file JSON
+    model = xgb.XGBClassifier()
+    model.load_model("model/xgboost_model.json")
+
+    # Load label encoder
+    with open("model/label_encoder.pkl", "rb") as f:
+        le = joblib.load(f)
+        
     return model, le
 
 def show_dashboard(df):
