@@ -126,7 +126,7 @@ pass : elyzMetabase00
     Aplikasi akan berjalan di http://localhost:8501 dan otomatis terbuka di browser.
 
 3. Link Deployment dapat diakses pada :
-
+    https://jaya-jaya-institute-retention-rate.streamlit.app
 
 
 ## Conclusion
