@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 from supabase import create_client
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score
 
 SUPABASE_URL = "https://csfaqojfluduffilprnd.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzZmFxb2pmbHVkdWZmaWxwcm5kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk1MDAyOTYsImV4cCI6MjA2NTA3NjI5Nn0.kuB-eWHS4EzcegMTAFgwGGgwjfGYBtI3hEv1aTil8UQ"
